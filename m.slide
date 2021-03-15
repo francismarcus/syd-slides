@@ -1,0 +1,130 @@
+Golang
+Feb 10, 2021
+
+Marcus
+@francismarcus
+marcus.magnusson@cygni.se
+
+
+* History
+- Created in 2007
+- at Google
+- Replacement for C++ and Java (mainly)
+- designed by and for people who write large software systems.
+
+* Why
+- Huge build time
+- Dependency management
+- Different subsets of a language
+- Hard to read
+
+* What
+- Must work at scale, large number of dependencies & programmers
+- Familiar, C like
+- Modern, utilizing multicore, built-in concurrency
+
+* Reality
+- Small memory usage
+- Easy concurrency
+- Garbage Collection
+- Fast
+
+* Used by
+- Stripe, Paypal
+- Uber, Discord, Twitch
+- Docker, Kubernetes
+
+* Syntax
+- C
+- Pascal
+
+* Hello, World!
+.play m/hello.go
+
+* Declaration
+- Statically 
+.play m/static.go
+
+- Short Declaration
+.play m/short.go
+
+- Const 
+.play m/const.go
+
+* Types
+.play m/types.go
+
+* Type Declarations
+.play m/newtype.go
+
+* Slice
+.play m/slice.go
+
+* Maps
+.play m/maps.go
+
+* Functions
+.play m/func.go
+
+* Methods
+.play m/methods.go
+
+* Interfaces
+.play m/interfaces.go
+
+* Pointers
+- indirecting
+.play m/indirecting.go
+* Pointers
+- dereferencing
+.play m/dereferencing.go
+
+* Concurrency
+
+* Goroutines
+.play m/goroutine.go
+.play m/routineexample.go
+
+* Channels
+- <- operator 
+.play m/channel.go
+
+
+*
+.play m/channelexample.go
+
+* Putting it together
+    go mod init github.com/username/cygnisyd
+
+* Model
+.play api/pkg/entities/beer.go
+
+* Repository 
+.play api/pkg/beer/repository.go /f START/,/f END/
+
+* Repository
+.play api/pkg/beer/repository.go /main START/,/main END/
+
+* Service
+.play api/pkg/beer/service.go /main START/,/main END/
+
+* Routes
+.play api/pkg/routes/routes.go /f START/,/f END/
+
+* Routes
+.play api/pkg/routes/routes.go /s START/,/s END/
+
+* Routes
+.play api/pkg/routes/routes.go /main START/,/main END/
+
+* Routes
+.play api/pkg/routes/routes.go /create START/,/create END/
+
+* Main
+.play api/main.go /f START/,/f END/
+
+* Main
+.play api/main.go /main START/,/main END/
+
+* Main
+.play api/main.go /db START/,/db END/
